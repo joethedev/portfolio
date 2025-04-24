@@ -17,12 +17,12 @@ const VantaBackground = ({children}) => {
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
+            minHeight: 100.0,
+            minWidth: 100.0,
+            scale: 0.3,
             scaleMobile: 1.0,
             color: 0x00ff99,
-            backgroundColor: 0xFFFFFF,
+            backgroundColor: 0x000000,
           })
         );
       }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portfolio_img from "@/assets/imgs/portfolio-img.png";
+import portfolio_img from "@/assets/imgs/profile-joelani.png";
 import linkedIn from "@/assets/imgs/linkedIn.png";
 import github from "@/assets/imgs/github.webp";
 import youtube from "@/assets/imgs/youtube.png";
@@ -8,12 +8,12 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex mt-[50px] justify-evenly gap-[40px]">
+    <div className="flex mt-[50px] justify-center gap-[40px]">
       <div>
         <Image
           src={portfolio_img}
           alt="hero"
-          width={800}
+          width={600}
           height={400}
           className="rounded-sm"
         />

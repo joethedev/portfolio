@@ -47,17 +47,17 @@ export default function Home() {
 
   const [visibleSection, setVisibleSection] = useState("about");
   return (
-    <VantaBackground>
+    <div className="h-screen flex justify-center items-center bg-[#202020]">
       <div className="max-w-[1080px] mx-auto">
         <Nav setVisibleSection={setVisibleSection} />
       </div>
       <div className="max-w-[1080px]">
         <div className="font-bold pt-1 pb-3 rounded-md mt-[70px] flex justify-center">
-          <h1 className="text-4xl">👨‍💻 Joelani – The Code Caffeinator ☕</h1>
+          <h1 className="text-4xl text-white">👨‍💻 Joelani – The Code Caffeinator ☕</h1>
         </div>
         {visibleSection == "about" && <Hero />}
         {visibleSection == "projects" && <ProjectShowcase projects={projects} />}
       </div>
-    </VantaBackground>
+    </div>
   );
 }
