@@ -1,5 +1,5 @@
 "use client";
-import { useState } from 'react';
+import { useState } from "react";
 import VantaBackground from "@/app/components/VantaBackground";
 import Hero from "./components/Hero";
 import ProjectShowcase from "./components/Project";
@@ -47,17 +47,19 @@ export default function Home() {
 
   const [visibleSection, setVisibleSection] = useState("about");
   return (
-    <div className="h-screen flex justify-center items-center bg-[#202020]">
-      <div className="max-w-[1080px] mx-auto">
-        <Nav setVisibleSection={setVisibleSection} />
-      </div>
-      <div className="max-w-[1080px]">
-        <div className="font-bold pt-1 pb-3 rounded-md mt-[70px] flex justify-center">
-          <h1 className="text-4xl text-white">👨‍💻 Joelani – The Code Caffeinator ☕</h1>
+    <>
+      
+        <div className="max-w-[1080px] mx-auto">
+          <Nav setVisibleSection={setVisibleSection} />
         </div>
-        {visibleSection == "about" && <Hero />}
-        {visibleSection == "projects" && <ProjectShowcase projects={projects} />}
+        <div className="h-screen flex justify-center items-center bg-[#202020]">
+        <div className="max-w-[1080px]">
+          {visibleSection == "about" && <Hero />}
+          {visibleSection == "projects" && (
+            <ProjectShowcase projects={projects} />
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

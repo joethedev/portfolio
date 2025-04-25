@@ -8,17 +8,12 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="flex mt-[50px] justify-center gap-[40px]">
-      <div>
-        <Image
-          src={portfolio_img}
-          alt="hero"
-          width={600}
-          height={400}
-          className="rounded-sm"
-        />
-      </div>
-      <div className="max-w-[600px] mt-10">
+    <div className="flex mt-[50px] justify-center gap-[70px] items-center">
+      
+      <div className="max-w-[500px] text-white">
+        <h1 className="text-[43px] mb-10">
+          <span className="font-bold bg-gradient-to-r from-white via-orange-500 to-white inline-block text-transparent bg-clip-text">The Code Caffeinator</span>☕
+        </h1>
         <p className="text-[19px]">
           Born in the alleys of Fes, brewed in caffeine and battle-tested by
           deadlines, Joelani is the legendary full-stack web developer who
@@ -30,19 +25,12 @@ const Hero = () => {
         <h3 className="text-2xl font-bold mt-4">🦸‍♂️ Superpowers:</h3>
         <ul className="list-none text-[19px] ml-5 mt-2">
           <li>🧠 Domain-Driven Debugging</li>
-          <li>⚙️ Component Summoning with React</li>
-          <li>🔐 Guardian of Secure APIs (NestJS + JWT)</li>
+          <li>⚙️ Component Summoning with React/Next</li>
+          <li>🔐 Guardian of Secure APIs (NestJS + Express)</li>
           <li>📦 Deploys with CI/CD fury</li>
-          <li>☁️ Cloud-surfing across AWS and GCP skies</li>
+          <li>☁️ Cloud-surfing across AWS and Azure skies</li>
         </ul>
-        <h3 className="text-2xl font-bold mt-4">🧰 Weapons of Choice:</h3>
-        <ul className="list-none text-[19px] ml-5 mt-2">
-          <li>Dual-wielding Git and GitHub like a true code samurai</li>
-          <li>Uses Tailwind as a cape</li>
-          <li>Dockerized environments to teleport between projects</li>
-          <li>Coffee mug enchanted with infinite refills</li>
-        </ul>
-        <h3 className="text-2xl font-bold mt-4">He uses social media:</h3>
+        <h3 className="text-2xl font-bold mt-4">Get in touch:</h3>
         <div className="flex gap-2 mt-4">
           <Link href="google.com">
             <Image
@@ -50,7 +38,7 @@ const Hero = () => {
               alt="LinkedIn"
               width={40}
               height={40}
-              className="rounded-lg"
+              className="rounded-lg "
             />
           </Link>
           <Link href="google.com">
@@ -75,6 +63,15 @@ const Hero = () => {
             <Image src={ig} alt="Instagram" width={40} height={40} />
           </Link>
         </div>
+      </div>
+      <div>
+        <Image
+          src={portfolio_img}
+          alt="hero"
+          width={600}
+          height={400}
+          className="transition-all duration-300 hover:shadow-[0_30px_60px_-10px_rgba(255,115,0,0.7)] hover:scale-105 border-5 border-[#FF7300]"
+        />
       </div>
     </div>
   );
