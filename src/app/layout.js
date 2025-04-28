@@ -14,6 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
+      <div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+  </div>
         {children}
       </body>
     </html>

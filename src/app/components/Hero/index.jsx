@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portfolio_img from "@/assets/imgs/profile-joelani.png";
+import portfolio_img from "@/assets/imgs/joelani-portfolio.png";
 import linkedIn from "@/assets/imgs/linkedIn.png";
 import github from "@/assets/imgs/github.webp";
 import youtube from "@/assets/imgs/youtube.png";
@@ -68,9 +68,8 @@ const Hero = () => {
         <Image
           src={portfolio_img}
           alt="hero"
-          width={600}
+          width={350}
           height={400}
-          className="transition-all duration-300 hover:shadow-[0_30px_60px_-10px_rgba(255,115,0,0.7)] hover:scale-105 border-5 border-[#FF7300]"
         />
       </div>
     </div>

@@ -52,7 +52,7 @@ export default function Home() {
         <div className="max-w-[1080px] mx-auto">
           <Nav setVisibleSection={setVisibleSection} />
         </div>
-        <div className="h-screen flex justify-center items-center bg-[#202020]">
+        <div className="h-screen flex justify-center items-center">
         <div className="max-w-[1080px]">
           {visibleSection == "about" && <Hero />}
           {visibleSection == "projects" && (
