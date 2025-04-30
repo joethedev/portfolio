@@ -9,7 +9,7 @@ export default function ProjectShowcase({ projects, styling }) {
     const [selectedProject, setSelectedProject] = useState(null);
   
     return (
-      <section className={`py-12 px-4 md:px-12 ${styling}`}>
+      <section className={`py-12 px-4 h-screen md:px-12 ${styling}`}>
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">
           My Projects
         </h2>
@@ -29,7 +29,7 @@ export default function ProjectShowcase({ projects, styling }) {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-30 object-cover"
               />
               <div className="p-5">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
